@@ -1,0 +1,262 @@
+/* Página wrapper */
+.page {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background: white;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: rgba(67, 67, 67, 0.351) solid 1px;
+  z-index: 1000;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+}
+
+.navbar a:hover {
+  color: rgb(140, 19, 80);
+}
+a{
+  text-decoration: none;
+}
+
+.logo {
+  font-style: bold;
+  font-size: 20px;
+  font-weight: 500;
+
+  /* Gradiente no texto */
+  background: linear-gradient(to right, #ff0000, #ff69b4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.nav-center {
+  display: flex;
+  gap: 40px;
+}
+
+.login-btn {
+  padding: 8px 18px;
+  border: 1px solid black;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: black;
+  color: white;
+}
+
+/* Footer */
+.footer {
+  background: rgba(255,255,255,0.95);
+  border-top: 1px solid #ddd;
+  padding: 50px 20px 30px 20px;
+  font-family: "Poppins", sans-serif;
+  margin-top: auto; /* garante que fique no final */
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer h3 {
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  margin-bottom: 10px;
+
+    /* Gradiente no texto */
+  background: linear-gradient(to right, #ff0000c9, #ff69b4c6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.footer h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.footer p,
+.footer ul,
+.footer li {
+  font-size: 14px;
+  color: rgba(0,0,0,0.6);
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 6px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: rgba(0,0,0,0.6);
+  transition: color 0.25s;
+}
+
+.footer a:hover {
+  color: #4f46e5;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: rgba(0,0,0,0.5);
+}
+
+
+
+
+
+
+
+.titulo-secao {
+  font-size: 3rem;
+  font-weight: 700;
+  padding-top: 100px;
+  margin-bottom: 10px; /* ajusta espaço abaixo do título */
+  text-align: center;
+  color: #000; /* preto */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* sombra leve */
+}
+
+/* Subtítulo */
+.subtitulo-secao {
+  font-size: 1.25rem; /* ou 1.5rem se quiser maior */
+  font-weight: 400;
+  text-align: center;
+  color: #000; /* preto */
+  margin-bottom: 60px; /* espaço antes do grid */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.15); /* sombra ainda mais sutil */
+}
+
+/* Grid responsivo genérico */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 60px;
+  padding: 0 60px 60px;
+  justify-items: center;
+}
+
+/* Card genérico */
+.card {
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: all 0.3s;
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+
+/* Header do card com gradiente genérico */
+.card-header {
+  padding: 24px;
+  display: flex;
+  align-items: flex-end;
+  height: 150px;
+  background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.2), rgba(255, 105, 180, 0.2));
+}
+
+.card-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+/* Corpo do card */
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-body p {
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+/* Tags */
+.tags {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+
+/* Footer do card */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0 0 0;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.card-footer > div,
+.card-footer > button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+/* Botão genérico */
+.btn {
+  padding: 8px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}

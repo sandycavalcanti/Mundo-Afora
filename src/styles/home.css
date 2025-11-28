@@ -1,0 +1,191 @@
+/* Banner */
+.banner {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 0 20px;
+  border-bottom: 2px solid #000000;
+}
+
+.banner-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(180, 139, 81, 0.493), rgba(222, 88, 126, 0.351));
+}
+
+.banner-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.3;
+  background-repeat: repeat;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  max-width: 800px;
+}
+
+.welcome-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-bottom: 20px;
+  border-radius: 999px;
+  background: rgba(79,70,229,0.1);
+  color: #4f46e5;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.banner h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.highlight-text {
+  background: linear-gradient(to right, #4f46e5, #f472b6, #4f46e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner p {
+  font-size: 18px;
+  color: rgba(0,0,0,0.7);
+  margin-bottom: 32px;
+}
+
+.banner-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border-radius: 999px;
+  background-color: #000000;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: #4338ca;
+}
+
+.arrow-icon {
+  transition: transform 0.3s;
+}
+
+.btn-primary:hover .arrow-icon {
+  transform: translateX(4px);
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 999px;
+  border: 2px solid #4f46e5;
+  color: #4f46e5;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background-color: rgba(79,70,229,0.1);
+}
+
+/* Cards/Destaques */
+.cards-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.cards-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap; /* permite quebrar linha se a tela for pequena */
+  justify-content: center; /* centraliza os cards horizontalmente */
+  gap: 100px; /* espaçamento entre os cards */
+}
+
+.card {
+  flex: 1 1 260px; /* cresce, encolhe e tem mínimo de 260px */
+  max-width: 300px; /* opcional, limita tamanho do card */
+}
+
+.highlight-card {
+  background: linear-gradient(to bottom right, rgba(255,200,150,0.2), rgba(245,114,182,0.2));
+  padding: 32px;
+  border-radius: 24px;
+  text-align: left;
+  border: 1px solid rgba(79,70,229,0.2);
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: rgba(0,0,0,0.9);
+}
+
+.highlight-card:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.highlight-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.highlight-card p {
+  font-size: 0.9rem;
+  color: rgba(0,0,0,0.7);
+}
+
+.pacotes {
+  background: linear-gradient(to bottom right, rgba(79,70,229,0.2), rgba(245,114,182,0.2));
+}
+
+.hoteis {
+  background: linear-gradient(to bottom right, rgba(16,185,129,0.2), rgba(245,114,182,0.2));
+}
+
+/* Faixa final / CTA */
+.final-sec {
+  background: linear-gradient(to bottom right, #ffb7da, #ffe1ed);
+  text-align: center;
+  padding: 80px 20px;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+}
+
+.final-sec h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.final-sec p {
+  font-size: 1.1rem;
+  color: rgba(0,0,0,0.7);
+  margin-bottom: 24px;
+}

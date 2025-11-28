@@ -1,0 +1,130 @@
+/* Página */
+.pacotes-page {
+  background: linear-gradient(to bottom, #ffedeb, #ffe4e8);
+  min-height: 100vh;
+}
+
+
+/* Grid responsivo */
+.grid-pacotes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 60px;
+  padding: 0 60px 60px ;
+  justify-items: center;
+}
+
+/* Card */
+.pacote-card {
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(79,70,229,0.2);
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: all 0.3s;
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pacote-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+
+/* Header com gradiente */
+.pacote-card-header {
+  background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.2), rgba(255, 105, 180, 0.2));
+  padding: 24px;
+  display: flex;
+  align-items: flex-end;
+  height: 150px;
+}
+
+.pacote-card-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+/* Body */
+.pacote-card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.descricao {
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+.detalhes .item {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+/* Tags */
+.tags {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+
+.guia { background-color: #d1fae5; color: #065f46; }
+.hospedagem { background-color: #dbebff; color: #1e40af; }
+.sem-guia, .sem-hospedagem { background-color: #e5e7eb; color: #374151; }
+
+/* Footer */
+.pacote-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0 0 0; /* só padding top */
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.pacote-card-footer > div,
+.pacote-card-footer > button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0; /* remove margens que podem desalinhar */
+}
+
+.label {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.preco {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #e54646;
+}
+
+/* Botão */
+.btn-reservar {
+  padding: 8px 20px;
+  border-radius: 999px;
+  background-color: #e54646;
+  color: white;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+.btn-reservar:hover {
+  background-color: #c57c7c;
+}

@@ -1,0 +1,27 @@
+.destinos-page {
+  background: linear-gradient(to bottom, #ffedeb, #ffe4e8);
+  min-height: 100vh;
+}
+
+/* Header */
+.header-destinos {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header-destinos h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1f2937; /* preto */
+}
+
+.header-destinos p {
+  font-size: 1.2rem;
+}
+
+.card-footer .btn{
+  color: #000;
+}
+.card-footer .btn:hover{
+  color: #d84c29;
+}
