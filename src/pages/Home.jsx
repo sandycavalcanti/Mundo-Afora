@@ -55,10 +55,6 @@ export default function Home() {
             <h3>Pacotes Viagem</h3>
             <p>Viagens completas com tudo incluído</p>
           </Link>
-          <Link to="/hoteis" className="card highlight-card hoteis">
-            <h3>Hospedagens</h3>
-            <p>Hotéis e resorts de primeira qualidade</p>
-          </Link>
         </div>
       </section>
 

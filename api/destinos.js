@@ -5,16 +5,7 @@ export default async function handler(req, res) {
     const db = await connect();
 
     const [rows] = await db.query(`
-      SELECT 
-        Des_id,
-        Des_cidade,
-        Des_estado,
-        Des_pais,
-        Des_clima,
-        Des_descricao,
-        Des_regiao
-      FROM Destino
-      WHERE Des_status = 1
+      SELECT * FROM vw_destinos_ativos;
     `);
 
     // adaptar nomes para o front

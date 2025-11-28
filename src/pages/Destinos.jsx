@@ -24,9 +24,8 @@ export default function Destinos() {
     <div className="destinos-page">
       <Navbar />
       <main className="conteudo">
-        <h2 className="titulo-secao">Pacotes de Viagem</h2>
-        <p className="subtitulo-secao">Viagens completas com tudo que você precisa</p>
-
+        <h2 className="titulo-secao">Destinos</h2>
+        <p className="subtitulo-secao">Escolha entre nossos destinos mais populares e comece sua aventura</p>
         {/* Grid de Destinos */}
         <div className="grid-cards">
           {destinos.map((destino) => (

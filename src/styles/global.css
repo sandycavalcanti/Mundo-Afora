@@ -233,23 +233,6 @@ a{
   border-radius: 999px;
 }
 
-/* Footer do card */
-.card-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 0 0 0;
-  border-top: 1px solid rgba(0,0,0,0.05);
-}
-
-.card-footer > div,
-.card-footer > button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0;
-}
-
 /* Botão genérico */
 .btn {
   padding: 8px 20px;

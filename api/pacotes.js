@@ -4,26 +4,7 @@ export default async function handler(req, res) {
   try {
     const db = await connect();
     const [rows] = await db.execute(`
-      SELECT 
-        p.Pct_id,
-        p.Pct_nome,
-        p.Pct_roteiro,
-        p.Pct_dtInicio,
-        p.Pct_dtFim,
-        p.Pct_descricao,
-        p.Pct_prcBase,
-        p.Pct_hospedagem,
-        p.Pct_transporte,
-        p.Pct_status,
-        h.Hot_nome AS hotel,
-        tq.Tpq_nome AS tipo_quarto,
-        d.Des_cidade AS destino,
-        d.Des_estado AS destino_estado,
-        d.Des_pais AS destino_pais
-      FROM Pacotes p
-      JOIN Hotel h ON p.Hot_CNPJ = h.Hot_CNPJ
-      JOIN TipoQuarto tq ON p.Tpq_id = tq.Tpq_id
-      JOIN Destino d ON p.Des_id = d.Des_id;
+        SELECT * FROM vw_pacotes_completos;
     `);
 
     const pacotes = rows.map(p => ({
